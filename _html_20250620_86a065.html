@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citas Médicas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Agendar Cita Médica</h1>
+    <form id="citaForm">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" required>
+
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" required>
+
+      <label for="doctor">Médico:</label>
+      <select id="doctor" required>
+        <option value="Dr. Pérez">Dr. Pérez</option>
+        <option value="Dra. Gómez">Dra. Gómez</option>
+      </select>
+
+      <button type="submit">Agendar Cita</button>
+    </form>
+
+    <div id="citasList"></div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
